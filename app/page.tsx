@@ -21,7 +21,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Testimonials } from "@/components/testimonials"
 import { ClientLogos } from "@/components/client-logos"
-import { NewsletterSignup } from "@/components/newsletter-signup"
+//import { NewsletterSignup } from "@/components/newsletter-signup"
 
 import appImage from "@/assets/images/dev.webp"
 

@@ -4,6 +4,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Contacto - Mejora Digital",
+  description: "Ponte en contacto con nosotros para más información.",
+  robots: "index, follow",
+};
+
 export default function ContactPage() {
   return (
     <div className="flex min-h-screen flex-col">

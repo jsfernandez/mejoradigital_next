@@ -1,4 +1,5 @@
 import type React from "react"
+import Head from "next/head"
 import { Mona_Sans as FontSans } from "next/font/google"
 import localFont from "next/font/local"
 import "./globals.css"
@@ -12,6 +13,26 @@ const fontHeading = localFont({
   src: "../assets/fonts/Montserrat-Bold.woff2",
   variable: "--font-heading",
 })
+
+export const metadata = {
+    title: "Mi Empresa - Soluciones Digitales",
+    description: "Descubre nuestras soluciones digitales para tu empresa. Transformación digital a tu medida.",
+    keywords: ["desarrollo de software", "transformación digital", "tecnología", "innovación"],
+    authors: [{ name: "Mi Empresa", url: "https:www//mejoradigital.cl" }],
+    robots: "index, follow",
+    openGraph: {
+      title: "Mejora Digital - Soluciones Digitales",
+      description: "Descubre nuestras soluciones digitales para tu empresa.",
+      url: "https:www//mejoradigital.cl",
+      siteName: "Mejora Digital",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Mi Empresa - Soluciones Digitales",
+      description: "Descubre nuestras soluciones digitales para tu empresa.",
+    },
+  };
 
 export default function RootLayout({
   children,

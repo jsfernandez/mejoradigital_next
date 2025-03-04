@@ -2,6 +2,12 @@ import { SiteHeader } from "@/components/site-header"
 import { ServiceCard } from "@/components/service-card"
 import { Shield, Code, Laptop, Zap, BarChart, LinkIcon, Users, Layout } from "lucide-react"
 
+export const metadata = {
+    title: "Nuestros Servicios - Mejora Digital",
+    description: "Descubre nuestros servicios de desarrollo de software y transformación digital.",
+    robots: "index, follow",
+  };
+
 export default function ServicesPage() {
   const services = [
     {

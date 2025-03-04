@@ -11,6 +11,12 @@ import ciberseguridad from "@/assets/images/ciberseguridad.png"
 import automatizacion from "@/assets/images/automatizacion.png"
 import transformacionDigital from "@/assets/images/transformacion-digital.png"
 
+export const metadata = {
+  title: "Quiénes Somos - Mejora Digital",
+  description: "Conoce más sobre nuestra empresa y equipo de trabajo.",
+  robots: "index, follow",
+};
+
 export default function AboutPage() {
   const features = [
     {

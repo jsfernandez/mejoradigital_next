@@ -24,9 +24,9 @@ const testimonials = [
     image: juanRuz,
   },
   {
-    quote: "Gracias a su experiencia en transformación digital, logramos optimizar nuestros procesos y mejorar nuestra competitividad.",
+    quote: "Ha sido un placer llevar a cabo proyectos de procesos tecnológicos junto a ‘Mejora Digital’. Como publicista, valoro enormemente contar con profesionales no solo altamente capacitados, sino también con un gran sentido humano. Destaco especialmente su genuino compromiso, el cumplimiento de tiempos y su organización impecable.",
     author: "Mauro Semmler",
-    role: "Director de “Canales Digitales” Laboratorio Bagó.",
+    role: "Publicista. Laboratorio Bagó Chile.",
     image: mauroSemmler,
   },
 ]
@@ -37,7 +37,7 @@ export function Testimonials() {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setActive((current) => (current + 1) % testimonials.length)
-    }, 5000)
+    }, 10000)
     return () => clearInterval(timer)
   }, [])
 

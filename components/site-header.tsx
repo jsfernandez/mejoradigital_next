@@ -90,9 +90,9 @@ export function SiteHeader() {
                     {route.label}
                   </Link>
                 ))}
-                <Button asChild>
-                  <Link href="/contacto" onClick={() => setIsOpen(false)}>
-                    Contáctanos
+                <Button asChild className="bg-[hsl(171.01,57.39%,38.93%)]">
+                  <Link href="https://wa.link/x3fr60" onClick={() => setIsOpen(false)} target="_blank">
+                    Escribenos a Whatsapp _<PhoneIcon className="h-5 w-5" />
                   </Link>
                 </Button>
               </nav>
