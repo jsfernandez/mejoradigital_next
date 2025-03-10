@@ -1,5 +1,6 @@
 import type React from "react"
 import Head from "next/head"
+import Script from "next/script";
 import { Mona_Sans as FontSans } from "next/font/google"
 import localFont from "next/font/local"
 import "./globals.css"
@@ -41,7 +42,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <head />
+      <head>
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-1MFJ8TZ69R"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1MFJ8TZ69R');
+            `,
+          }}
+        />
+      </head>
       <body className={`${fontSans.variable} ${fontHeading.variable} font-sans antialiased`}>
         <div className="relative flex min-h-screen flex-col">
           <div className="flex-1">{children}</div>
