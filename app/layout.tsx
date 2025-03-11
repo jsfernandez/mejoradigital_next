@@ -16,10 +16,10 @@ const fontHeading = localFont({
 })
 
 export const metadata = {
-    title: "Mi Empresa - Soluciones Digitales",
+    title: "Mejora Digital - Soluciones Digitales",
     description: "Descubre nuestras soluciones digitales para tu empresa. Transformación digital a tu medida.",
     keywords: ["desarrollo de software", "transformación digital", "tecnología", "innovación"],
-    authors: [{ name: "Mi Empresa", url: "https:www//mejoradigital.cl" }],
+    authors: [{ name: "Mejora Digital", url: "https:www//mejoradigital.cl" }],
     robots: "index, follow",
     openGraph: {
       title: "Mejora Digital - Soluciones Digitales",
@@ -30,7 +30,7 @@ export const metadata = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Mi Empresa - Soluciones Digitales",
+      title: "Mejora Digital - Soluciones Digitales",
       description: "Descubre nuestras soluciones digitales para tu empresa.",
     },
   };

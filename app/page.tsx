@@ -1,6 +1,6 @@
-import { SiteHeader } from "@/components/site-header"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { SiteHeader } from "@/components/site-header";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Code,
   Laptop,
@@ -16,67 +16,75 @@ import {
   Github,
   Linkedin,
   Twitter,
-} from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
-import { Testimonials } from "@/components/testimonials"
-import { ClientLogos } from "@/components/client-logos"
+} from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { Testimonials } from "@/components/testimonials";
+import { ClientLogos } from "@/components/client-logos";
 //import { NewsletterSignup } from "@/components/newsletter-signup"
 
-import appImage from "@/assets/images/dev.webp"
-
+import appImage from "@/assets/images/dev.webp";
+import { FeaturedSolutions } from "@/components/fetured-solutions";
 
 export default function Home() {
   const services = [
     {
       icon: Code,
       title: "Desarrollo de Software a Medida",
-      description: "Creamos plataformas y aplicaciones personalizadas para que tu negocio funcione mejor y más rápido.",
+      description:
+        "Creamos plataformas y aplicaciones personalizadas para que tu negocio funcione mejor y más rápido.",
       color: "from-primary/20 to-accent/20",
     },
     {
       icon: Laptop,
       title: "Transformación Digital Empresarial",
-      description: "Digitalizamos tus procesos, eliminamos tareas manuales y hacemos tu empresa más eficiente.",
+      description:
+        "Digitalizamos tus procesos, eliminamos tareas manuales y hacemos tu empresa más eficiente.",
       color: "from-accent/20 to-success/20",
     },
     {
       icon: Cog,
       title: "Integración y Automatización de Sistemas",
-      description: "Hacemos que todos tus sistemas y herramientas trabajen juntos de forma automática.",
+      description:
+        "Hacemos que todos tus sistemas y herramientas trabajen juntos de forma automática.",
       color: "from-success/20 to-primary/20",
     },
     {
       icon: Shield,
       title: "Ciberseguridad y Protección de Datos",
-      description: "Protegemos la información de tu empresa con auditorías de seguridad y buenas prácticas.",
+      description:
+        "Protegemos la información de tu empresa con auditorías de seguridad y buenas prácticas.",
       color: "from-primary/20 to-success/20",
     },
     {
       icon: BarChart,
       title: "Inteligencia de Negocios y Análisis de Datos",
-      description: "Transformamos tus datos en información valiosa para que tomes mejores decisiones.",
+      description:
+        "Transformamos tus datos en información valiosa para que tomes mejores decisiones.",
       color: "from-accent/20 to-primary/20",
     },
     {
       icon: Cloud,
       title: "Desarrollo de Productos SaaS",
-      description: "Si tienes una idea de software como servicio, la hacemos realidad con tecnología escalable.",
+      description:
+        "Si tienes una idea de software como servicio, la hacemos realidad con tecnología escalable.",
       color: "from-success/20 to-accent/20",
     },
     {
       icon: Smartphone,
       title: "Aplicaciones Móviles y Web",
-      description: "Creamos apps modernas y fáciles de usar para conectar mejor con tus clientes.",
+      description:
+        "Creamos apps modernas y fáciles de usar para conectar mejor con tus clientes.",
       color: "from-primary/20 to-accent/20",
     },
     {
       icon: Building,
       title: "Plataformas para Empresas",
-      description: "Diseñamos software especializado para optimizar la gestión de tu negocio.",
+      description:
+        "Diseñamos software especializado para optimizar la gestión de tu negocio.",
       color: "from-accent/20 to-success/20",
     },
-  ]
+  ];
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -97,18 +105,25 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4 animate-fade-in">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-success animate-gradient">
-                    Soluciones Digitales y Desarrollo de Software para Hacer Crecer tu Negocio
+                    Soluciones Digitales y Desarrollo de Software para Hacer
+                    Crecer tu Negocio
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-                    Transformamos ideas en software a medida, optimizamos procesos y protegemos tu empresa con
-                    tecnología de vanguardia.
+                    Transformamos ideas en software a medida, optimizamos
+                    procesos y protegemos tu empresa con tecnología de
+                    vanguardia.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="animate-fade-in" asChild>
                     <Link href="/servicios">Conoce Nuestros Servicios</Link>
                   </Button>
-                  <Button variant="outline" size="lg" className="animate-fade-in" asChild>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="animate-fade-in"
+                    asChild
+                  >
                     <Link href="/contacto">Agenda una Consulta</Link>
                   </Button>
                 </div>
@@ -119,7 +134,9 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-1">
                     <CheckCircle className="h-4 w-4 text-success" />
-                    <span>Empresas en América y Europa confían en nosotros</span>
+                    <span>
+                      Empresas en América y Europa confían en nosotros
+                    </span>
                   </div>
                   <div className="flex items-center gap-1">
                     <CheckCircle className="h-4 w-4 text-success" />
@@ -153,13 +170,14 @@ export default function Home() {
                   Explora nuestros servicios
                 </h2>
                 <p className="mx-auto max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  Ofrecemos soluciones tecnológicas integrales para impulsar y proteger tu negocio
+                  Ofrecemos soluciones tecnológicas integrales para impulsar y
+                  proteger tu negocio
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
               {services.map((service, index) => {
-                const Icon = service.icon
+                const Icon = service.icon;
                 return (
                   <Card key={index} className="group relative overflow-hidden">
                     <div
@@ -172,12 +190,14 @@ export default function Home() {
                         </div>
                         <div className="space-y-2">
                           <h3 className="font-bold">{service.title}</h3>
-                          <p className="text-sm text-muted-foreground">{service.description}</p>
+                          <p className="text-sm text-muted-foreground">
+                            {service.description}
+                          </p>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
-                )
+                );
               })}
             </div>
             <div className="text-center">
@@ -191,14 +211,35 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Featured Solutions Section - Replaces Video Showcase */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/30">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                  Soluciones Destacadas
+                </h2>
+                <p className="mx-auto max-w-[700px] text-muted-foreground">
+                  Descubre cómo nuestras soluciones tecnológicas pueden
+                  transformar tu negocio
+                </p>
+              </div>
+            </div>
+            <FeaturedSolutions />
+          </div>
+        </section>
+
         {/* Clients Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter">Empresas que han trabajado con nosotros</h2>
+                <h2 className="text-3xl font-bold tracking-tighter">
+                  Empresas que han trabajado con nosotros
+                </h2>
                 <p className="mx-auto max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  Nuestros clientes incluyen empresas de tecnología, banca y retail
+                  Nuestros clientes incluyen empresas de tecnología, banca y
+                  retail
                 </p>
               </div>
             </div>
@@ -213,7 +254,9 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter">Lo que dicen nuestros clientes</h2>
+                <h2 className="text-3xl font-bold tracking-tighter">
+                  Lo que dicen nuestros clientes
+                </h2>
                 <p className="mx-auto max-w-[900px] text-muted-foreground md:text-xl/relaxed">
                   Historias de éxito de quienes ya han transformado su negocio
                 </p>
@@ -231,7 +274,8 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  ¿Listo para llevar tu empresa al siguiente nivel con tecnología de vanguardia?
+                  ¿Listo para llevar tu empresa al siguiente nivel con
+                  tecnología de vanguardia?
                 </h2>
                 <p className="mx-auto max-w-[900px] text-muted-foreground md:text-xl/relaxed">
                   Agenda una consulta gratuita y descubre cómo podemos ayudarte
@@ -256,14 +300,21 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-lg font-bold">Sobre Nosotros</h3>
                 <p className="text-sm text-muted-foreground">
-                  Expertos en desarrollo de software, transformación digital y tecnologías innovadoras para empresas.
+                  Expertos en desarrollo de software, transformación digital y
+                  tecnologías innovadoras para empresas.
                 </p>
                 <div className="flex gap-4">
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
+                  <Link
+                    href="#"
+                    className="text-muted-foreground hover:text-foreground"
+                  >
                     <Twitter className="h-5 w-5" />
                     <span className="sr-only">Twitter</span>
                   </Link>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
+                  <Link
+                    href="#"
+                    className="text-muted-foreground hover:text-foreground"
+                  >
                     <Linkedin className="h-5 w-5" />
                     <span className="sr-only">LinkedIn</span>
                   </Link>
@@ -302,6 +353,5 @@ export default function Home() {
         </footer>
       </main>
     </div>
-  )
+  );
 }
-
