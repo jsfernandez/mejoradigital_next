@@ -25,6 +25,7 @@ import { ClientLogos } from "@/components/client-logos";
 
 import appImage from "@/assets/images/dev.webp";
 import { FeaturedSolutions } from "@/components/fetured-solutions";
+import { AssociatesShowcase } from "@/components/associates-showcases";
 
 export default function Home() {
   const services = [
@@ -217,7 +218,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                  Soluciones Destacadas
+                  Soluciones Que Destacan
                 </h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground">
                   Descubre cómo nuestras soluciones tecnológicas pueden
@@ -226,6 +227,23 @@ export default function Home() {
               </div>
             </div>
             <FeaturedSolutions />
+          </div>
+        </section>
+
+        {/* Associates Section */}
+        <section className="w-full py-8 md:py-12 lg:py-16 bg-muted/20">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-2 text-center">
+              <div className="space-y-1">
+                <h2 className="text-2xl font-bold tracking-tighter">Nuestros Asociados</h2>
+                <p className="mx-auto max-w-[700px] text-sm text-muted-foreground md:text-base">
+                  Colaboramos con las mejores empresas para ofrecer soluciones integrales
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto max-w-6xl py-6">
+              <AssociatesShowcase />
+            </div>
           </div>
         </section>
 
