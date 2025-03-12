@@ -38,11 +38,8 @@ export function FeaturedSolutions() {
   return (
     <div className="space-y-16">
       {solutions.map((solution, index) => (
-        <div
-          key={solution.id}
-          className={`grid gap-8 items-center ${index % 2 === 0 ? "lg:grid-cols-2" : "lg:grid-cols-2 lg:grid-flow-dense"}`}
-        >
-          <div className={`space-y-4 ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
+        <div key={solution.id} className="flex flex-col gap-8">
+          <div className="space-y-4">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">{solution.title}</h2>
             <p className="text-muted-foreground">{solution.description}</p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -59,8 +56,8 @@ export function FeaturedSolutions() {
             </div>
           </div>
 
-          <div className={`${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}>
-            <div className="relative aspect-video w-full h-[300px] rounded-lg overflow-hidden border bg-muted">
+          <div className="mx-auto w-full max-w-3xl">
+            <div className="relative aspect-video w-full rounded-lg overflow-hidden border bg-muted">
               {activeVideo === solution.id ? (
                 <iframe
                   width="100%"
