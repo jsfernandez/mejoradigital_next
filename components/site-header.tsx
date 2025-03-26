@@ -28,6 +28,10 @@ export function SiteHeader() {
       label: "Quiénes Somos",
     },
     {
+      href: "/proyectos",
+      label: "Nuestros Proyectos",
+    },
+    {
       href: "/contacto",
       label: "Contacto",
     },
