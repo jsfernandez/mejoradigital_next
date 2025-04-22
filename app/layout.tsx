@@ -65,7 +65,7 @@ export default function RootLayout({
       <body className={`${fontSans.variable} ${fontHeading.variable} font-sans antialiased`}>
         <div className="relative flex min-h-screen flex-col">
           <div className="flex-1">{children}</div>
-          <ChatWidget />
+          {/* <ChatWidget /> */}
         </div>
       </body>
     </html>
