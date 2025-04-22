@@ -1,0 +1,20 @@
+  /* Mensajes de bot y usuario */
+  .n8n-chat-widget .n8n-message {
+    font-size: 0.575rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Texto dentro de los cuadros de mensaje (más específico aún) */
+  .chat-message > .chat-message-markdown {
+    font-size: 0.85rem !important;
+  }
+  
+  /* Input donde escribes */
+  .n8n-chat-widget .n8n-input {
+    font-size: 0.575rem !important;
+  }
+/* Aumentar el ancho de la ventana del chat */
+.chat-window-wrapper .chat-window {
+    width: 500px !important; /* o el valor que tú quieras, ej: 420px */
+    max-width: 90vw !important; /* por si estás en mobile */
+  }
