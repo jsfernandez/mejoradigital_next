@@ -6,6 +6,7 @@ import localFont from "next/font/local"
 import "./globals.css"
 import ChatWidget from "@/components/chat-widge";
 import { N8NChat } from "@/components/n8n-chat";
+import FloatingChatTooltip from "@/components/floating-chat-tooltip";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -66,6 +67,7 @@ export default function RootLayout({
       <body className={`${fontSans.variable} ${fontHeading.variable} font-sans antialiased`}>
         <div className="relative flex min-h-screen flex-col">
           <div className="flex-1">{children}</div>
+          <FloatingChatTooltip />
           <N8NChat />
         </div>
       </body>
