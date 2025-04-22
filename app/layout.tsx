@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Mona_Sans as FontSans } from "next/font/google"
 import localFont from "next/font/local"
 import "./globals.css"
+import ChatWidget from "@/components/chat-widge";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -64,6 +65,7 @@ export default function RootLayout({
       <body className={`${fontSans.variable} ${fontHeading.variable} font-sans antialiased`}>
         <div className="relative flex min-h-screen flex-col">
           <div className="flex-1">{children}</div>
+          <ChatWidget />
         </div>
       </body>
     </html>
