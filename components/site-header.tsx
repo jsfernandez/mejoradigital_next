@@ -32,6 +32,10 @@ export function SiteHeader() {
       label: "Nuestros Proyectos",
     },
     {
+      href: "/alivia",
+      label: "AlivIA",
+    },
+    {
       href: "/contacto",
       label: "Contacto",
     },
