@@ -156,6 +156,8 @@ export default function PrivacyPolicyPage() {
                 </p>
 
                 <h2>11. Contacto</h2>
+                <br></br>
+                <br></br>
                 <p>Si tienes dudas o inquietudes sobre esta política, puedes contactarnos en:</p>
                 <div className="space-y-2 not-prose">
                   <div className="flex items-center gap-2">
