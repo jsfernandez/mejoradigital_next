@@ -351,6 +351,9 @@ export default function Home() {
                     <Link href="/contacto" className="hover:underline">
                       Contacto
                     </Link>
+                    <Link href="/politica-de-privacidad" className="hover:underline">
+                      Política de Privacidad
+                    </Link>
                   </nav>
                 </div>
                 <div className="space-y-4">
