@@ -57,6 +57,23 @@ export default function ProyectosPage() {
       ],
     },
     {
+      id: "leads-manager",
+      title: "LeadManager",
+      description:"LeadManager es una plataforma que conecta necesidades reales de personas con soluciones confiables ofrecidas por empresas validadas. En vez de que un contacto “pase un dato” de forma informal, la plataforma permite derivar esa necesidad de manera estructurada, trazable y transparente. La persona ayuda a su red a resolver un problema real y, al mismo tiempo, obtiene ingresos por aportar valor. Para las empresas, Leadmanager convierte un proceso históricamente desordenado en uno medible: campañas con metas claras, leads calificados, validación de cumplimiento y respaldo documental. Esto reduce costos comerciales, mejora la conversión y evita el fraude o la duplicidad de información. La innovación está en profesionalizar una acción cotidiana —conectar a alguien con quien puede ayudarlo— transformándola en un sistema escalable que genera beneficios simultáneos para personas y empresas, sin fricción y con un enfoque humano.",
+      client: "Interno",
+      tags: [
+        "Node.js",
+        "ReactJS",
+        "TypeScript",
+        "Ionic",
+        "API",
+        "Desarrollo web",
+        "Desarrollo móvil",
+        "Integraciones",
+        "PostgreSQL",
+      ],
+    },
+    {
       id: "careband",
       title: "Careband",
       description:
